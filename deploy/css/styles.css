@@ -364,7 +364,7 @@ body ul li {
     Typography
 ============= */
 body {
-  font-family: "Comfortaa", cursive;
+  font-family: "Antonio";
 }
 
 h1, h2, h3, h4, h5 {
@@ -462,4 +462,20 @@ nav ul li:last-child {
 ============= */
 /* =============
     Footer
+============= */
+/* =============
+    hero
+============= */
+#hero-section {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../img/hero/hero-section.png");
+  background-size: cover;
+}
+
+/* =============
+    news
+============= */
+/* =============
+    events
 ============= */
