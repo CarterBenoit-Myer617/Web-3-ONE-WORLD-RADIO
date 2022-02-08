@@ -460,6 +460,112 @@ nav ul li:last-child {
 /* =============
     Header
 ============= */
+header {
+  grid-template-areas: ". header .";
+  grid-template-columns: 20% auto 20%;
+  background-color: transparent;
+  position: absolute;
+  width: 1145px;
+  height: 126px;
+  left: 291px;
+  top: 45px;
+}
+header > div {
+  grid-area: header;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  header > div {
+    grid-template-areas: "burger-container" "nav-container" "logo-container";
+  }
+}
+header > div #burger-container #burger svg {
+  left: 0%;
+  right: 0%;
+  top: 11.72%;
+  bottom: 11.72%;
+}
+header > div #nav-container {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+header > div #nav-container ul {
+  border: 1px solid blue;
+  display: flex;
+}
+header > div #nav-container ul flex-direction:column li {
+  border: 1px solid yellow;
+}
+header > div #nav-container ul flex-direction:column li #Events .nav-btns {
+  width: 126px;
+  height: 30px;
+  /* Events */
+  position: absolute;
+  width: 272px;
+  height: 50px;
+  left: calc(50% - 136px - 291.5px);
+  top: calc(50% - 25px);
+  font-family: Antonio;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 80px;
+  /* or 333% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+  /* Music */
+  position: absolute;
+  width: 270px;
+  height: 50px;
+  left: calc(50% - 135px + 0.5px);
+  top: calc(50% - 25px);
+  font-family: Antonio;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 80px;
+  /* or 333% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+}
+header > div #nav-container ul flex-direction:column li #Events .nav-btns Magazine {
+  position: absolute;
+  width: 271px;
+  height: 50px;
+  left: calc(50% - 135.5px + 292px);
+  top: calc(50% - 25px);
+  font-family: Antonio;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+}
+header > div #nav-container ul li #Music {
+  width: 125px;
+  height: 30px;
+  left: calc(50% - 62.5px);
+  top: calc(50% - 15px);
+}
+header > div #nav-container ul li #Magazine {
+  width: 125px;
+  height: 30px;
+  left: calc(50% - 62.5px);
+  top: calc(50% - 15px);
+}
+
 /* =============
     Footer
 ============= */
@@ -467,10 +573,19 @@ nav ul li:last-child {
     hero
 ============= */
 #hero-section {
-  height: 100vh;
-  width: 100vw;
-  background-image: url("../img/hero/hero-section.png");
-  background-size: cover;
+  width: 1728px;
+  height: 1117px;
+  left: 0px;
+  top: 0px;
+  background: url(hero-cover-1.png);
+}
+#hero-section > div {
+  position: absolute;
+  width: 709px;
+  height: 192px;
+  left: 291px;
+  top: 803px;
+  font-size: 3rem;
 }
 
 /* =============
