@@ -360,6 +360,10 @@ body ul li {
   list-style: none;
 }
 
+img {
+  width: 100%;
+}
+
 /* =============
     Typography
 ============= */
@@ -461,109 +465,70 @@ nav ul li:last-child {
     Header
 ============= */
 header {
+  display: grid;
   grid-template-areas: ". header .";
-  grid-template-columns: 20% auto 20%;
+  grid-template-columns: auto 80% auto;
   background-color: transparent;
-  position: absolute;
-  width: 1145px;
+  position: fixed;
   height: 126px;
-  left: 291px;
-  top: 45px;
+  width: 100%;
+  z-index: 1000;
 }
 header > div {
   grid-area: header;
   width: 100%;
+  display: grid;
+  grid-template-columns: 30% auto;
+  grid-template-areas: "logo burger";
+}
+header > div #logo-container {
+  grid-area: logo;
+  border: 1px solid red;
+}
+header > div #burger-container {
+  grid-area: burger;
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
-@media (min-width: 1024px) {
-  header > div {
-    grid-template-areas: "burger-container" "nav-container" "logo-container";
-  }
+header > div #burger-container #burger {
+  height: 40px;
+  width: 40px;
 }
 header > div #burger-container #burger svg {
-  left: 0%;
-  right: 0%;
-  top: 11.72%;
-  bottom: 11.72%;
+  width: 100%;
 }
 header > div #nav-container {
+  display: none;
   border: 1px solid red;
-  display: flex;
   flex-direction: row;
-  align-items: stretch;
+  align-items: center;
+  grid-template-columns: 30% 90% 30%;
+  position: relative;
 }
 header > div #nav-container ul {
   border: 1px solid blue;
-  display: flex;
-}
-header > div #nav-container ul flex-direction:column li {
-  border: 1px solid yellow;
-}
-header > div #nav-container ul flex-direction:column li #Events .nav-btns {
-  width: 126px;
-  height: 30px;
-  /* Events */
-  position: absolute;
-  width: 272px;
-  height: 50px;
-  left: calc(50% - 136px - 291.5px);
-  top: calc(50% - 25px);
-  font-family: Antonio;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 80px;
-  /* or 333% */
-  display: flex;
+  display: grid;
+  grid-area: nav;
   align-items: center;
-  text-align: center;
-  color: #000000;
-  /* Music */
-  position: absolute;
-  width: 270px;
-  height: 50px;
-  left: calc(50% - 135px + 0.5px);
-  top: calc(50% - 25px);
-  font-family: Antonio;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 80px;
-  /* or 333% */
+  padding-left: 20;
+  padding-right: 20;
+  position: relative;
+}
+header > div #nav-container ul #Events {
   display: flex;
-  align-items: center;
-  text-align: center;
-  color: #000000;
+  padding-left: 20;
+  padding-right: 20;
 }
-header > div #nav-container ul flex-direction:column li #Events .nav-btns Magazine {
-  position: absolute;
-  width: 271px;
-  height: 50px;
-  left: calc(50% - 135.5px + 292px);
-  top: calc(50% - 25px);
-  font-family: Antonio;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
+header > div #nav-container ul #Music {
   display: flex;
-  align-items: center;
-  text-align: center;
-  color: #000000;
+  padding-left: 20;
+  padding-right: 20;
 }
-header > div #nav-container ul li #Music {
-  width: 125px;
-  height: 30px;
-  left: calc(50% - 62.5px);
-  top: calc(50% - 15px);
-}
-header > div #nav-container ul li #Magazine {
-  width: 125px;
-  height: 30px;
-  left: calc(50% - 62.5px);
-  top: calc(50% - 15px);
+header > div #nav-container ul #Magazine {
+  display: flex;
+  padding-left: 20;
+  padding-right: 20;
 }
 
 /* =============
@@ -572,20 +537,11 @@ header > div #nav-container ul li #Magazine {
 /* =============
     hero
 ============= */
-#hero-section {
-  width: 1728px;
-  height: 1117px;
-  left: 0px;
-  top: 0px;
-  background: url(hero-cover-1.png);
-}
 #hero-section > div {
-  position: absolute;
-  width: 709px;
-  height: 192px;
-  left: 291px;
-  top: 803px;
-  font-size: 3rem;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: url(hero-cover-1.png);
 }
 
 /* =============

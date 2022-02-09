@@ -1497,6 +1497,29 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/deploy\/img\/header\/Vector.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/header\/Vector.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/hero\/hero-cover-1.png" : {
+      "ft" : 32768,
+      "iS" : 698426,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/hero\/hero-cover-1.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/hero\/hero-cover-2.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -1643,6 +1666,14 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/hero.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/nav.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/nav.html",
       "oF" : 0
     },
     "\/dev\/content\/news.kit" : {

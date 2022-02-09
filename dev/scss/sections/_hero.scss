@@ -5,22 +5,17 @@
 
 #hero-section {
 
-    width: 1728px;
-    height: 1117px;
-    left: 0px;
-    top: 0px;
-
-    background: url(hero-cover-1.png);
-
 
     >div {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        
 
-        position: absolute;
-        width: 709px;
-        height: 192px;
-        left: 291px;
-        top: 803px;
-        font-size: 3rem;
+
+        background: url(hero-cover-1.png);
+
+
     }
 
 }

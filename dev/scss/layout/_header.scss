@@ -2,57 +2,55 @@
     Header
 ============= */
 header {
-
-
+    display: grid;
     grid-template-areas: ". header .";
-
-    grid-template-columns: 20% auto 20%;
+    grid-template-columns: auto 80% auto;
     background-color: transparent;
-    position: absolute;
-    width: 1145px;
+    position: fixed;
     height: 126px;
-    left: 291px;
-    top: 45px;
-
+    width: 100%;
+    z-index: 1000;
 
 
     >div {
         grid-area: header;
         width: 100%;
-        // border: 1px solid red;
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: center;
-        align-items: center;
+        display: grid;
+        grid-template-columns: 30% auto;
+        grid-template-areas: "logo burger";
 
-        @include lg {
-
-            grid-template-areas: "burger-container""nav-container""logo-container";
-
-
+        #logo-container {
+            grid-area: logo;
+            border: 1px solid red;
         }
 
         #burger-container {
-            
+            grid-area: burger;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
             #burger {
+                height: 40px;
+                width: 40px;
+
                 svg {
-                    left: 0%;
-                    right: 0%;
-                    top: 11.72%;
-                    bottom: 11.72%;
+                    width: 100%;
                 }
 
             }
 
         }
 
-
-
         #nav-container {
+            display: none;
             border: 1px solid red;
-            display: flex;
+            // display: flex;
             flex-direction: row;
-            align-items: stretch;;
+            align-items: center;
+            grid-template-columns: 30% 90% 30%;
+            position: relative;
+
 
 
 
@@ -61,126 +59,49 @@ header {
 
             ul {
                 border: 1px solid blue;
-                display: flex;
-                flex-direction:column
+                display: grid;
+                grid-area: nav;
+                align-items: center;
+                padding-left: 20;
+                padding-right: 20;
+                position: relative;
 
-                
+                #Events {
 
-                li {
-                    border: 1px solid yellow;
-                    #Events {
-                        .nav-btns {
-                            width: 126px;
-                            height: 30px;
+                    display: flex;
+                    padding-left: 20;
+                    padding-right: 20;
 
-                            /* Events */
+                }
 
-                            position: absolute;
-                            width: 272px;
-                            height: 50px;
-                            left: calc(50% - 272px/2 - 291.5px);
-                            top: calc(50% - 50px/2);
+                #Music {
+                    display: flex;
+                    padding-left: 20;
+                    padding-right: 20;
 
-                            font-family: Antonio;
-                            font-style: normal;
-                            font-weight: normal;
-                            font-size: 24px;
-                            line-height: 80px;
-                            /* or 333% */
-                            display: flex;
-                            align-items: center;
-                            text-align: center;
+                }
 
-                            color: #000000;
-
-
-
-                            /* Music */
-
-                            position: absolute;
-                            width: 270px;
-                            height: 50px;
-                            left: calc(50% - 270px/2 + 0.5px);
-                            top: calc(50% - 50px/2);
-
-                            font-family: Antonio;
-                            font-style: normal;
-                            font-weight: normal;
-                            font-size: 24px;
-                            line-height: 80px;
-                            /* or 333% */
-                            display: flex;
-                            align-items: center;
-                            text-align: center;
-
-                            color: #000000;
-
-
-
-                            Magazine {
-
-                                position: absolute;
-                                width: 271px;
-                                height: 50px;
-                                left: calc(50% - 271px/2 + 292px);
-                                top: calc(50% - 50px/2);
-
-                                font-family: Antonio;
-                                font-style: normal;
-                                font-weight: normal;
-                                font-size: 24px;
-
-
-                                display: flex;
-                                align-items: center;
-                                text-align: center;
-
-                                color: #000000;
-                            }
-
-
-
-
-                        }
-
-                    }
-
-
-
+                #Magazine {
+                    display: flex;
+                    padding-left: 20;
+                    padding-right: 20;
 
                 }
 
 
-                li {
 
-                    #Music {
-                        width: 125px;
-                        height: 30px;
-                        left: calc(50% - 125px/2);
-                        top: calc(50% - 30px/2);
-                    }
-
-
-
-                }
-
-                li {
-
-                    #Magazine {
-                        width: 125px;
-                        height: 30px;
-                        left: calc(50% - 125px/2);
-                        top: calc(50% - 30px/2);
-                    }
-                }
             }
+
+
+
 
 
 
         }
 
-    }
 
+
+    }
 
 
 
