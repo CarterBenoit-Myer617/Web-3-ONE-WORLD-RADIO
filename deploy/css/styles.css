@@ -549,15 +549,19 @@ header > div #nav-container ul #Magazine {
 ============= */
 #news-section #news-temp {
   display: grid;
+  grid-template-columns: 25% auto;
+  width: 1147px;
+  height: 1574px;
   grid-area: news-temp;
-  padding-top: 230px;
+  padding-top: 100px;
   background: url(news-section.png);
 }
 #news-section #news-temp img {
   position: relative;
-  width: 1147px;
-  height: 1574px;
-  left: 100px;
+  grid-area: news-temp;
+  width: 100%;
+  height: 100%;
+  align-content: center;
 }
 
 /* =============
