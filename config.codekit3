@@ -1507,6 +1507,19 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/deploy\/img\/hero\/Group-9.png" : {
+      "ft" : 32768,
+      "iS" : 7120963,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/hero\/Group-9.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/hero\/hero-cover-1.png" : {
       "ft" : 32768,
       "iS" : 698426,

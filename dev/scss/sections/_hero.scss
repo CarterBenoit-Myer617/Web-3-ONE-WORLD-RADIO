@@ -4,16 +4,24 @@
 
 
 #hero-section {
+    
+    
 
 
     >div {
-        position: relative;
+
+        display: grid;
+
+        grid-area: hero-section;
         width: 100vw;
         height: 100vh;
+
+        background: url(hero-cover-1);
         
 
 
-        background: url(hero-cover-1.png);
+        // background: url(Group-9.png);
+    
 
 
     }

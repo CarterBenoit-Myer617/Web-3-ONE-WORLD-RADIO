@@ -483,7 +483,6 @@ header > div {
 }
 header > div #logo-container {
   grid-area: logo;
-  border: 1px solid red;
 }
 header > div #burger-container {
   grid-area: burger;
@@ -538,10 +537,11 @@ header > div #nav-container ul #Magazine {
     hero
 ============= */
 #hero-section > div {
-  position: relative;
+  display: grid;
+  grid-area: hero-section;
   width: 100vw;
   height: 100vh;
-  background: url(hero-cover-1.png);
+  background: url(hero-cover-1);
 }
 
 /* =============
