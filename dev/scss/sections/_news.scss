@@ -22,6 +22,7 @@
 
     // #news-temp {
 
+<<<<<<< HEAD
 
     //     display: grid;
     //     grid-template-columns: 25% auto 25% ;
@@ -44,6 +45,21 @@
 
 
     //     }
+=======
+        display: grid;
+        grid-area: news-temp;
+        padding-top: 230px;
+        background: url(news-section.png);
+
+        img {
+
+            position: relative;
+            width: 1147px;
+            height: 1574px;
+            left: 100px;
+            
+        }
+>>>>>>> parent of 80daf3b (update again nes section)
 
 
 

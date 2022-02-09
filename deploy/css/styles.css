@@ -549,6 +549,7 @@ header > div #nav-container ul #Magazine {
 /* =============
     news
 ============= */
+<<<<<<< HEAD
 #news-section {
   display: flex;
   width: 100vw;
@@ -559,6 +560,19 @@ header > div #nav-container ul #Magazine {
   flex: content;
   align-content: center;
   padding-left: 3ex;
+=======
+#news-section #news-temp {
+  display: grid;
+  grid-area: news-temp;
+  padding-top: 230px;
+  background: url(news-section.png);
+}
+#news-section #news-temp img {
+  position: relative;
+  width: 1147px;
+  height: 1574px;
+  left: 100px;
+>>>>>>> parent of 80daf3b (update again nes section)
 }
 
 /* =============
