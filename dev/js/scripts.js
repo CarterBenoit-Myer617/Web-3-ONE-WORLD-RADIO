@@ -37,7 +37,7 @@ function checkScrolling(e) {
     }
 }
 
-window.addEventListener('load', function(){
+window.addEventListener('load', function (){
 
     // // index values               0                   1                   2
     let triggerElements = ["#history-middle","#history-first", "#skills-content"];

@@ -469,17 +469,14 @@ header {
   grid-template-areas: ". header .";
   grid-template-columns: auto 80% auto;
   background-color: transparent;
-  position: fixed;
-  height: 126px;
-  width: 100%;
   z-index: 1000;
 }
 header > div {
   grid-area: header;
   width: 100%;
   display: grid;
-  grid-template-columns: 30% auto;
-  grid-template-areas: "logo burger";
+  grid-template-columns: 30% auto 30%;
+  grid-template-areas: ". logo burger .";
 }
 header > div #logo-container {
   grid-area: logo;
@@ -488,7 +485,6 @@ header > div #burger-container {
   grid-area: burger;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
 }
 header > div #burger-container #burger {
   height: 40px;
@@ -536,9 +532,15 @@ header > div #nav-container ul #Magazine {
 /* =============
     hero
 ============= */
-#hero-section > div {
+#hero-section {
   display: grid;
   grid-area: hero-section;
+  width: 100vw;
+  height: 100vh;
+}
+#hero-section > div {
+  display: grid;
+  grid-area: ".hero-section.";
   width: 100vw;
   height: 100vh;
   background: url(hero-final-cover.png);
@@ -547,21 +549,16 @@ header > div #nav-container ul #Magazine {
 /* =============
     news
 ============= */
-#news-section #news-temp {
-  display: grid;
-  grid-template-columns: 25% auto;
-  width: 1147px;
-  height: 1574px;
-  grid-area: news-temp;
-  padding-top: 100px;
-  background: url(news-section.png);
+#news-section {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
 }
-#news-section #news-temp img {
-  position: relative;
-  grid-area: news-temp;
-  width: 100%;
-  height: 100%;
+#news-section svg {
+  display: flex;
+  flex: content;
   align-content: center;
+  padding-left: 3ex;
 }
 
 /* =============

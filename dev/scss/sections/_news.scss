@@ -2,46 +2,58 @@
     news
 ============= */
 #news-section {
+    display: flex;
+    width: 100vw;
+            height: 100vh;
 
-
-
-    #news-temp {
-
-
-        display: grid;
-        grid-template-columns: 25% auto ;
-        width: 1147px;
-        height: 1574px;
-       
-
-        grid-area: news-temp;
-        padding-top: 100px;
-        background: url(news-section.png);
-
-        img {
-           
+            svg{
+                
+                
+                display: flex;
+                flex: content;
+                align-content: center;
+                padding-left: 3ex;
             
+            }
 
-            
-
-            position: relative;
-            grid-area: news-temp;
-            width: 100%;
-            height: 100%;
-            align-content: center;
-
-
-        }
+    
 
 
 
+    // #news-temp {
+
+
+    //     display: grid;
+    //     grid-template-columns: 25% auto 25% ;
+    //     grid-template: "1" "center-news" "2";
+    //     width: 1147px;
+    //     height: 1574px;
+    //     top: 100px;
+
+    //     // grid-area: img;
+    //     // padding-top: 100px;
+    //     // background: url(news-section.png);
+
+    //     img {
+
+    //         position: relative;
+    //         grid-area: news-temp;
+    //         width: 100%;
+    //         height: 100%;
+    //         align-content: center;
+
+
+    //     }
 
 
 
-        // background: url(Group-9.png);
 
 
 
-    }
+    //     // background: url(Group-9.png);
+
+
+
+    // }
 
 }
