@@ -1573,6 +1573,19 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/deploy\/img\/hero\/hero-final-cover.png" : {
+      "ft" : 32768,
+      "iS" : 456908,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/hero\/hero-final-cover.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/hero\/hero-section.png" : {
       "ft" : 32768,
       "iS" : 695342,
@@ -1638,6 +1651,32 @@
       "iS" : 376835,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/news\/cover.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/news\/news-section.png" : {
+      "ft" : 32768,
+      "iS" : 766753,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/news\/news-section.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/news\/tablet-news-section.png" : {
+      "ft" : 32768,
+      "iS" : 735972,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/news\/tablet-news-section.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,

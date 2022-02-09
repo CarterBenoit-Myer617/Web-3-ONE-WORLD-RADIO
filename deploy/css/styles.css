@@ -541,12 +541,25 @@ header > div #nav-container ul #Magazine {
   grid-area: hero-section;
   width: 100vw;
   height: 100vh;
-  background: url(hero-cover-1);
+  background: url(hero-final-cover.png);
 }
 
 /* =============
     news
 ============= */
+#news-section #news-temp {
+  display: grid;
+  grid-area: news-temp;
+  padding-top: 230px;
+  background: url(news-section.png);
+}
+#news-section #news-temp img {
+  position: relative;
+  width: 1147px;
+  height: 1574px;
+  left: 100px;
+}
+
 /* =============
     events
 ============= */
